@@ -1,6 +1,8 @@
 const pianoKeys = Array.from(document.querySelectorAll(".piano-keys .key"));
+const volumeSlider = document.querySelector(".volume-slider input");
+const keysCheck = document.querySelector(".keys-check input");
 
-let audio = new Audio("src/tunes");
+let audio = new Audio("src/tunes/a.wav");
 
 const playTune = (key) => {
     audio.src = `src/tunes/${key}.wav`;
@@ -24,3 +26,15 @@ document.addEventListener("keydown", (e) => {
         console.log(`The key "${e.key}" is not supported.`)
     }
 });
+
+const handleVolume = (e) => {
+    audio.volume = e.target.value;
+};
+
+const showHideKeys = (e) => {
+    pianoKeys.forEach(key => key.classList.toggle("hide"))
+}
+
+volumeSlider.addEventListener("input", handleVolume);
+
+keysCheck.addEventListener("click", showHideKeys);
