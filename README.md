@@ -50,7 +50,7 @@ The Piano Simulator is a digital representation of a piano keyboard, complete wi
 To start playing the Piano Simulator, you don't need to install anything. Simply follow these steps:
 
 1. **Access the Simulator:**
-   - Open your web browser and visit the simulator's URL.
+   - Open your web browser and visit the simulator's [URL](https://tcr235.github.io/piano/).
 
 2. **Interact with the Piano:**
    - Use your keyboard or mouse to play the keys.
